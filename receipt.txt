@@ -1,0 +1,19 @@
+
+        Pizza Victoria
+        135 Main St N
+         Brampton, ON
+           L6X 1M9
+================================
+Veggie Lover's Pizza     $19.50
+9" Small Thin and Crispy
+ >Mushroom
+ >Green Peppers
+ >Red Onions
+ >Marinated tomatoes
+ >Grilled Chicken
+
+
+================================
+Subtotal                 $19.50
+Taxes(13%)               $2.54
+Total                    $22.04

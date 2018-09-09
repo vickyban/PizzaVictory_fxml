@@ -1,0 +1,48 @@
+.button{
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-background-color: #E84949;
+}
+.button:hover{
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-background-color:#B22222;
+}
+.result{
+    -fx-pref-width:332;
+    -fx-font-size: 11px;
+    -fx-text-fill: black;
+    -fx-padding: 20 2 20 2;
+    -fx-border-width:0 0 1 0;
+    -fx-border-color:black;
+    -fx-background-color: #f4f4f4;
+}
+.result:hover{
+    -fx-font-size: 11px;
+    -fx-text-fill: black;
+    -fx-padding: 20 2 20 2;
+    -fx-border-width:0 0 1 0;
+    -fx-border-color:black;
+    -fx-background-color: #D3D3D3;
+}
+.list-view{
+    -fx-background-color: transparent;
+}
+.list-cell{
+    -fx-padding: 0 15;
+    -fx-background-color: white;
+    -fx-cell-size: 60;
+    -fx-font-weight:bold;
+    -fx-background-insets: 3 4;
+}
+.list-cell:empty{
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+}
+.list-cell:filled:hover{
+    -fx-background-color: steelblue;
+    -fx-text-fill:white;
+
+}

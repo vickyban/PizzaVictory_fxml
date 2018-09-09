@@ -1,0 +1,46 @@
+.btnEdit{
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f4f4f4;
+    -fx-border-color:#f4f4f4;
+    -fx-border-width: 2;
+    -fx-background-color:transparent;
+}
+.btnEdit:hover{
+    -fx-text-fill: black;
+    -fx-background-color:#f3f3f3;
+}
+.menuItem{
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f4f4f4;
+}
+.menuItem:hover{
+    -fx-border-width: 0 0 3 0;
+    -fx-border-color:#B22222;
+}
+.addItem{
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-background-color:#4a8200;
+}
+.addItem:hover{
+    -fx-text-fill: white;
+    -fx-background-color:#5ca300;
+}
+.checkout{
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-background-color:#a30024;
+}
+.checkout:hover{
+    -fx-text-fill: white;
+    -fx-background-color:#e00023;
+}
+.table-row-cell:selected{
+    -fx-background-color: steelblue;
+    -fx-font-weight:bold;
+}
+

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="603.0" prefWidth="900.0" style="-fx-background-color: #161a1e;" stylesheets="@../Stylesheets/Menu.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.Controllers.MenuController">
+   <children>
+      <AnchorPane layoutY="39.0" prefHeight="550.0" prefWidth="900.0">
+         <children>
+            <ImageView fitHeight="386.0" fitWidth="855.0" layoutX="134.0" layoutY="95.0" opacity="0.93" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/pizzashowcase6.jpg" />
+               </image>
+               <effect>
+                  <MotionBlur radius="0.77" />
+               </effect></ImageView>
+            <Arc fill="#161a1e" layoutX="494.0" layoutY="294.0" length="270.0" radiusX="281.0" radiusY="261.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" type="ROUND">
+               <effect>
+                  <Blend />
+               </effect>
+            </Arc>
+         </children>
+      </AnchorPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#171b1e" height="522.0" layoutY="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="461.0" />
+      <AnchorPane layoutX="49.0" layoutY="197.0" prefHeight="361.0" prefWidth="363.0" style="-fx-background-color: transparent;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="419.0" layoutX="-10.0" layoutY="-49.0" stroke="#dad7d7" strokeType="INSIDE" width="385.0" />
+            <Button fx:id="ownPizza" contentDisplay="RIGHT" graphicTextGap="5.0" layoutX="14.0" layoutY="33.0" mnemonicParsing="false" onAction="#switchToOrder" prefHeight="93.0" prefWidth="334.0" text="Create your own             ">
+               <graphic>
+                  <ImageView fitHeight="78.0" fitWidth="128.0" layoutX="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Img/createOwn2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="42.77" offsetX="2.0" offsetY="2.0" radius="21.6625" spread="0.14" width="45.88" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSpecial1" contentDisplay="RIGHT" graphicTextGap="5.0" layoutX="15.0" layoutY="144.0" mnemonicParsing="false" onAction="#switchToOrder" prefHeight="92.0" prefWidth="334.0" text="Meat Lover Pizza ">
+               <graphic>
+                  <ImageView fx:id="imgSpecial1" fitHeight="80.0" fitWidth="120.0" layoutX="45.0" pickOnBounds="true" preserveRatio="true" x="45.0">
+                     <image>
+                        <Image url="@../Img/supreme2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="42.77" offsetX="2.0" offsetY="2.0" radius="21.6625" spread="0.14" width="45.88" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSpecial2" contentDisplay="RIGHT" graphicTextGap="5.0" layoutX="15.0" layoutY="255.0" mnemonicParsing="false" onAction="#switchToOrder" prefHeight="89.0" prefWidth="334.0" text="Hawaii Pizza        ">
+               <graphic>
+                  <ImageView fx:id="imgSpecial2" fitHeight="80.0" fitWidth="120.0" layoutX="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Img/vegie2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="42.77" offsetX="2.0" offsetY="2.0" radius="21.6625" spread="0.14" width="45.88" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="56.0" fitWidth="58.0" layoutX="151.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/pizzaGraphic.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="218.0" layoutY="169.0" text="Menu" textFill="#d7d7d7">
+         <font>
+            <Font name="Bookman Old Style Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="2.0" prefHeight="97.0" prefWidth="900.0">
+         <children>
+            <Button fx:id="btnHome" layoutX="58.0" layoutY="39.0" mnemonicParsing="false" onAction="#switchHome" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: transparent;" styleClass="menuItem" text="Home" textFill="#ebe9e9">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <AnchorPane layoutX="403.0" layoutY="7.0" prefHeight="69.0" prefWidth="93.0">
+               <children>
+                  <Circle fill="DODGERBLUE" layoutX="42.0" layoutY="37.0" radius="29.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-width: 5; -fx-stroke: #ff9f00; -fx-fill: transparent;" />
+                  <Label layoutX="6.0" layoutY="32.0" prefHeight="28.0" prefWidth="72.0" style="-fx-background-color: black;" text="Victoria" textFill="#ff4023">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="16.0" prefHeight="19.0" prefWidth="72.0" style="-fx-padding: 0 0 0 0; -fx-background-color: black;" text="Pizza" textAlignment="CENTER">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold" size="16.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="3.469446951953614E-17">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="cart" layoutX="750.0" layoutY="21.0" mnemonicParsing="false" onAction="#switchCheckout" prefHeight="57.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-text-fill: #e4e1e1;" text="0" textFill="#e4e1e1">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView blendMode="ADD" fitHeight="39.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <ColorAdjust brightness="1.0" contrast="0.51" />
+                     </effect>
+                     <image>
+                        <Image url="@../Img/carticon3.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnMenu" layoutX="149.0" layoutY="39.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: transparent;" styleClass="menuItem" text="Menu" textFill="#ebe9e9">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="storeAddress" alignment="CENTER" layoutY="87.0" prefHeight="21.0" prefWidth="900.0" style="-fx-background-color: gray;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+.button{
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+    -fx-background-color:#ffe870;
+}
+.button:hover{
+    -fx-text-fill: white;
+    -fx-background-color:#B22222;
+}
+.menuItem{
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f4f4f4;
+}
+.menuItem:hover{
+    -fx-border-width: 0 0 3 0;
+    -fx-border-color:#B22222;
+}

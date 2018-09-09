@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #161a1e;" stylesheets="@../Stylesheets/Checkout.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.Controllers.CheckoutController">
+   <children>
+      <TableView fx:id="tableView" layoutX="44.0" layoutY="146.0" prefHeight="343.0" prefWidth="569.0">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="188.0" styleClass="colum-header-background" text="Name" />
+          <TableColumn fx:id="colDetail" prefWidth="235.0" styleClass="colum-header-background" text="Details" />
+            <TableColumn fx:id="colPrice" prefWidth="134.0" style="-fx-aligment: center;" styleClass="colum-header-background" text="Price " />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="635.0" layoutY="146.0" prefHeight="212.0" prefWidth="231.0" style="-fx-background-color: #f3f3f3;">
+         <children>
+            <Label alignment="CENTER" layoutX="7.0" layoutY="14.0" prefHeight="21.0" prefWidth="222.0" text="Order Summary">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Separator layoutX="16.0" layoutY="49.0" prefWidth="200.0" />
+            <Label layoutX="14.0" layoutY="67.0" prefHeight="21.0" prefWidth="72.0" text="SubTotal:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="113.0" prefHeight="21.0" prefWidth="33.0" text="Tax:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="163.0" text="Total:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="16.0" layoutY="145.0" prefWidth="200.0" />
+            <Label fx:id="lbSubTotal" layoutX="170.0" layoutY="67.0" text="Price">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="lbTax" layoutX="170.0" layoutY="113.0" text="Price">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="lbTotal" layoutX="170.0" layoutY="163.0" text="Price">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnEdit" layoutX="385.0" layoutY="513.0" mnemonicParsing="false" onAction="#onEdit" prefHeight="31.0" prefWidth="93.0" styleClass="btnEdit" text="Edit" />
+      <Button fx:id="btnDelete" layoutX="502.0" layoutY="513.0" mnemonicParsing="false" onAction="#onDelete" prefHeight="31.0" prefWidth="86.0" styleClass="btnEdit" text="Remove" />
+      <Button fx:id="btnadd" layoutX="635.0" layoutY="382.0" mnemonicParsing="false" onAction="#switchMenu" prefHeight="31.0" prefWidth="231.0" styleClass="addItem" text="Add more food" />
+      <Button fx:id="btnCheckout" layoutX="635.0" layoutY="426.0" mnemonicParsing="false" onAction="#onCheckout" prefHeight="31.0" prefWidth="231.0" styleClass="checkout" text="Checkout" />
+      <AnchorPane layoutY="1.0" prefHeight="97.0" prefWidth="900.0">
+         <children>
+            <Button fx:id="btnHome" layoutX="58.0" layoutY="39.0" mnemonicParsing="false" onAction="#switchHome" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: transparent;" styleClass="menuItem" text="Home" textFill="#ebe9e9">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <AnchorPane layoutX="403.0" layoutY="7.0" prefHeight="69.0" prefWidth="93.0">
+               <children>
+                  <Circle fill="DODGERBLUE" layoutX="42.0" layoutY="37.0" radius="29.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-width: 5; -fx-stroke: #ff9f00; -fx-fill: transparent;" />
+                  <Label layoutX="6.0" layoutY="32.0" prefHeight="28.0" prefWidth="72.0" style="-fx-background-color: black;" text="Victoria" textFill="#ff4023">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="16.0" prefHeight="19.0" prefWidth="72.0" style="-fx-padding: 0 0 0 0; -fx-background-color: black;" text="Pizza" textAlignment="CENTER">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold" size="16.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="3.469446951953614E-17">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="cart" layoutX="750.0" layoutY="21.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-text-fill: #e4e1e1;" text="0" textFill="#e4e1e1">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView blendMode="ADD" fitHeight="39.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <ColorAdjust brightness="1.0" contrast="0.51" />
+                     </effect>
+                     <image>
+                        <Image url="@../Img/carticon3.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnMenu" layoutX="149.0" layoutY="39.0" mnemonicParsing="false" onAction="#switchMenu" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: transparent;" styleClass="menuItem" text="Menu" textFill="#ebe9e9">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="storeAddress" alignment="CENTER" layoutY="87.0" prefHeight="21.0" prefWidth="900.0" style="-fx-background-color: gray;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="err_msg" layoutX="50.0" layoutY="119.0" text="Error" textFill="RED">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <StackPane fx:id="confirmationPane" prefHeight="600.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black; -fx-opacity: .4;" />
+            <AnchorPane maxHeight="300.0" maxWidth="500.0" prefHeight="412.0" prefWidth="652.0" style="-fx-background-color: white; -fx-background-radius: 17; -fx-border-color: #18c218; -fx-border-radius: 14; -fx-border-width: 6;">
+               <children>
+                  <Label layoutX="134.0" layoutY="96.0" text="THANKS FOR YOUR ORDER" textFill="#18c218">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="150.0" layoutY="123.0" text="Order Number:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="61.0" layoutY="150.0" prefHeight="21.0" prefWidth="380.0" text="Pickup Address">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbConfirmationN" layoutX="266.0" layoutY="123.0" text="Label">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <Label fx:id="lbPickupAddress" alignment="CENTER" layoutX="26.0" layoutY="177.0" prefHeight="21.0" prefWidth="445.0" text="Label">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <Button fx:id="btnFinish" layoutX="118.0" layoutY="218.0" mnemonicParsing="false" onAction="#onFinish" prefHeight="49.0" prefWidth="288.0" style="-fx-border-radius: 10;" styleClass="addItem" text="Back to home" />
+                  <ImageView fitHeight="76.0" fitWidth="132.0" layoutX="212.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Img/tick.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="-0.12" contrast="-0.07" hue="0.47" saturation="0.34" />
+                     </effect></ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

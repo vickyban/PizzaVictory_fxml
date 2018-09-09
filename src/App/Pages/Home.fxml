@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #161a1e;" stylesheets="@../Stylesheets/Home.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.Controllers.HomeController">
+   <children>
+      <AnchorPane layoutX="14.0" prefHeight="600.0" prefWidth="904.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="431.0" fitWidth="300.0" layoutX="509.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.2;">
+               <image>
+                  <Image url="@../Img/kisspng-hamburger-hot-dog-fast-food-pizza-cafe-pizza-5a6fbb8d428ad4.3857584915172719492726.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.36" contrast="1.0" hue="-1.0" saturation="-1.0" />
+               </effect>
+            </ImageView>
+            <Button fx:id="btnstart" layoutX="574.0" layoutY="453.0" mnemonicParsing="false" onAction="#openPopup" prefHeight="40.0" prefWidth="200.0" style="-fx-font-size: 20;" text="Find Store">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="575.0" fitWidth="400.0" layoutX="47.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/kisspng-menu-gratis-restaurant-cuisine-decorative-lace-material-vector-menu-5a7f16d191dd83.5303047615182783535975.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.11" contrast="-1.0" hue="-1.0" saturation="-0.78" />
+               </effect>
+            </ImageView>
+            <AnchorPane layoutX="37.0" layoutY="14.0" prefHeight="97.0" prefWidth="87.0" visible="false">
+               <children>
+                  <Circle fill="DODGERBLUE" layoutX="55.0" layoutY="55.0" radius="48.0" stroke="BLACK" strokeMiterLimit="12.0" strokeType="INSIDE" strokeWidth="2.0" style="-fx-stroke-width: 7; -fx-stroke: #ff9f00; -fx-fill: transparent;" />
+                  <Label alignment="CENTER" layoutX="3.0" layoutY="23.0" prefHeight="36.0" prefWidth="100.0" style="-fx-padding: 0 0 0 0; -fx-background-color: #161a1e;" text="Pizza" textFill="WHITE">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutY="51.0" prefHeight="38.0" prefWidth="111.0" style="-fx-background-color: #161a1e;" text="Victoria" textFill="#ff4023">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label fx:id="lbdate" alignment="CENTER" layoutX="86.0" layoutY="76.0" prefHeight="36.0" prefWidth="329.0" text="MONDAY SPECIALS" textFill="#c9c9c9">
+               <font>
+                  <Font name="Calisto MT Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="99.0" layoutY="189.0" text="Create your own" textFill="#e1e1e1" underline="true">
+               <font>
+                  <Font name="Calisto MT Bold" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="103.0" fitWidth="110.0" layoutX="278.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/createOwn1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgSpecial1" fitHeight="117.0" fitWidth="121.0" layoutX="274.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/chickenLover3.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgSpecial2" fitHeight="125.0" fitWidth="126.0" layoutX="273.0" layoutY="372.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/meatLover3.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbSpecial1" layoutX="100.0" layoutY="306.0" text="Chicken Lover's" textFill="#e1e1e1" underline="true">
+               <font>
+                  <Font name="Calisto MT Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbSpecial2" layoutX="100.0" layoutY="429.0" text="Supreme Pizza" textFill="#e1e1e1" underline="true">
+               <font>
+                  <Font name="Calisto MT Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="473.0" layoutY="171.0" prefHeight="49.0" prefWidth="261.0" text="Welcome" textFill="#f3f3f3">
+               <font>
+                  <Font name="Stencil" size="43.0" />
+               </font>
+            </Label>
+            <Label layoutX="584.0" layoutY="227.0" prefHeight="21.0" prefWidth="29.0" text="to" textFill="#f3f3f3">
+               <font>
+                  <Font name="Stencil" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="635.0" layoutY="226.0" text="Pizza" textFill="#ff9f00">
+               <font>
+                  <Font name="Gill Sans Ultra Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="688.0" layoutY="221.0" prefHeight="39.0" prefWidth="180.0" text="Victoria" textFill="#ff4023">
+               <font>
+                  <Font name="Gill Sans Ultra Bold" size="27.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="114.0" fitWidth="57.0" layoutX="515.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true" rotate="18.4">
+               <image>
+                  <Image url="@../Img/pointLine.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.63" />
+               </effect>
+            </ImageView>
+            <Label layoutX="517.0" layoutY="276.0" text="We’ve never had to change our recipe." textFill="#cdc7c7">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="517.0" layoutY="302.0" text="Because it never sucked." textFill="#cdc7c7">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="520.0" layoutY="328.0" text="Try it for yourself !!!" textFill="#cdc7c7">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="520.0" layoutY="357.0" text="Find your local store NOW !!!" textFill="#cdc7c7">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnMenu" layoutX="792.0" layoutY="35.0" mnemonicParsing="false" onAction="#switchMenu" style="-fx-background-color: transparent;" styleClass="menuItem" text="Menu" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="152.0" layoutY="100.0" prefHeight="600.0" prefWidth="900.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="514.0" fitWidth="904.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/bkg2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="329.0" fitWidth="424.0" layoutX="513.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/lineImg.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutY="438.0" prefHeight="162.0" prefWidth="904.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <AnchorPane layoutX="132.0" layoutY="-47.0" prefHeight="193.0" prefWidth="652.0" style="-fx-background-color: #f3f3f3;">
+                     <children>
+                        <ImageView fitHeight="139.0" fitWidth="208.0" layoutX="85.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Img/chickenLover1.jpg" />
+                           </image>
+                           <effect>
+                              <DropShadow color="#000000d4" height="36.55" radius="16.9975" width="33.44" />
+                           </effect>
+                        </ImageView>
+                        <ImageView fitHeight="139.0" fitWidth="208.0" layoutX="344.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                           <effect>
+                              <DropShadow color="#000000d4" height="36.55" radius="16.9975" width="33.44" />
+                           </effect>
+                           <image>
+                              <Image url="@../Img/cheeseLover1.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children></AnchorPane>
+            <Label layoutX="83.0" layoutY="145.0" text="Pizza" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <StackPane fx:id="popup" prefHeight="600.0" prefWidth="904.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="390.0" prefWidth="652.0" style="-fx-background-color: black; -fx-opacity: .5;" />
+            <AnchorPane maxHeight="400.0" maxWidth="400.0" prefHeight="400.0" prefWidth="365.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="97.0" layoutY="112.0" text=" Find your local Pizza Victoria" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtpcode" layoutX="107.0" layoutY="200.0" maxWidth="187.0" prefWidth="187.0" promptText="postal code..." />
+                  <Button fx:id="btnclose" layoutX="357.0" layoutY="14.0" mnemonicParsing="false" onAction="#closePopup" style="-fx-background-color: transparent; -fx-text-fill: black;" text="x">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane layoutX="151.0" layoutY="8.0" prefHeight="61.0" prefWidth="61.0">
+                     <children>
+                        <Circle fill="DODGERBLUE" layoutX="54.0" layoutY="54.0" radius="36.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-width: 5; -fx-stroke: #ff9f00; -fx-fill: transparent;" />
+                        <Label layoutX="11.0" layoutY="46.0" prefHeight="27.0" prefWidth="87.0" style="-fx-background-color: black;" text="Victoria" textFill="#ff4023">
+                           <font>
+                              <Font name="System Bold Italic" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="30.0" prefHeight="25.0" prefWidth="87.0" style="-fx-padding: 0 0 0 0; -fx-background-color: black;" text="Pizza" textAlignment="CENTER">
+                           <font>
+                              <Font name="Gill Sans Ultra Bold" size="20.0" />
+                           </font>
+                           <textFill>
+                              <RadialGradient centerX="0.5" centerY="0.5" radius="3.469446951953614E-17">
+                                 <stops>
+                                    <Stop color="BLACK" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </RadialGradient>
+                           </textFill>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="107.0" layoutY="171.0" text="Postal code" textFill="#8a8686">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnfind" layoutX="107.0" layoutY="249.0" maxWidth="187.0" mnemonicParsing="false" onAction="#onFind" prefHeight="40.0" prefWidth="187.0" text="Find Store">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="err_msg" layoutX="107.0" layoutY="142.0" textFill="RED">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+      <StackPane fx:id="loading" prefHeight="600.0" prefWidth="904.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="600.0" prefWidth="904.0" style="-fx-background-color: black; -fx-opacity: .5;" />
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: #f3f3f3;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="75.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Img/Preloader.gif" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="89.0" layoutY="196.0" style="-fx-background-color: #f3f3f3;" text="Calculating" textFill="#a47e48">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
