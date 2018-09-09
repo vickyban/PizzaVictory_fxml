@@ -1,6 +1,3 @@
 Run App/MainApp to start the app
-I enable Google API key to fetch location data.
-Please don't change the key.
-I will keep the key activate for few months from now.
-If it's not longer working, please "selectedStoreLocation" in MainApp file to a valid address
-to bypass the restriction to view the menu page
+Add Google API key as environment variable and in GoogleMap.html 
+Can skip to different view directly by changing the "mainScene = new Scene(name of View);" in MainApp file 
